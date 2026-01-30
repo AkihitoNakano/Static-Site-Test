@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Akihito Nakano | Portfolio</title>
+    <meta name="description" content="個人のWebサイト。アプリ開発実績をシンプルにまとめたポートフォリオ。" />
+    <style>
+      :root {
+        --bg: #f6f7f9;
+        --card: #ffffff;
+        --text: #0f172a;
+        --muted: #5b677a;
+        --accent: #2563eb;
+        --border: #e5e7eb;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font-family: "Noto Sans JP", "Hiragino Sans", "Yu Gothic", system-ui, -apple-system,
+          sans-serif;
+        color: var(--text);
+        background: var(--bg);
+        line-height: 1.6;
+      }
+
+      .wrap {
+        max-width: 960px;
+        margin: 0 auto;
+        padding: 64px 24px 80px;
+      }
+
+      header {
+        margin-bottom: 48px;
+      }
+
+      .eyebrow {
+        font-size: 14px;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        color: var(--muted);
+      }
+
+      h1 {
+        font-size: clamp(28px, 4vw, 42px);
+        margin: 12px 0 8px;
+      }
+
+      .lead {
+        color: var(--muted);
+        max-width: 680px;
+      }
+
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+        gap: 20px;
+      }
+
+      .card {
+        background: var(--card);
+        border: 1px solid var(--border);
+        border-radius: 16px;
+        padding: 20px;
+        box-shadow: 0 8px 24px rgba(15, 23, 42, 0.05);
+      }
+
+      .card h3 {
+        margin: 0 0 6px;
+        font-size: 18px;
+      }
+
+      .meta {
+        font-size: 13px;
+        color: var(--muted);
+        margin-bottom: 12px;
+      }
+
+      ul {
+        padding-left: 18px;
+        margin: 0 0 16px;
+      }
+
+      .tags {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+      }
+
+      .tag {
+        font-size: 12px;
+        padding: 4px 10px;
+        border-radius: 999px;
+        background: #eef2ff;
+        color: #1e3a8a;
+      }
+
+      .links {
+        margin-top: 14px;
+        display: flex;
+        gap: 12px;
+      }
+
+      .links a {
+        color: var(--accent);
+        text-decoration: none;
+        font-size: 14px;
+      }
+
+      .links a:hover {
+        text-decoration: underline;
+      }
+
+      footer {
+        margin-top: 56px;
+        color: var(--muted);
+        font-size: 13px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <header>
+        <div class="eyebrow">Portfolio</div>
+        <h1>GamesCheckin</h1>
+        <p class="lead">
+          アプリの企画・設計・開発を一貫して支援するエンジニア。ユーザー体験と運用性を両立した
+          プロダクトづくりを得意としています。
+        </p>
+      </header>
+
+      <section>
+        <h2>開発実績</h2>
+        <div class="grid">
+          <article class="card">
+            <h3>スマート予約アプリ</h3>
+            <div class="meta">モバイル / 2024</div>
+            <ul>
+              <li>予約フローのUI/UXを再設計し、離脱率を改善</li>
+              <li>オフライン対応と通知機能を実装</li>
+              <li>API設計とリリース管理を担当</li>
+            </ul>
+            <div class="tags">
+              <span class="tag">Flutter</span>
+              <span class="tag">Firebase</span>
+              <span class="tag">Figma</span>
+            </div>
+            <div class="links">
+              <a href="#">ケーススタディ</a>
+              <a href="#">デモ</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <h3>業務ダッシュボード</h3>
+            <div class="meta">Web / 2023</div>
+            <ul>
+              <li>経営指標をリアルタイムで可視化</li>
+              <li>権限管理と監査ログを整備</li>
+              <li>アクセシビリティ改善を主導</li>
+            </ul>
+            <div class="tags">
+              <span class="tag">React</span>
+              <span class="tag">TypeScript</span>
+              <span class="tag">Node.js</span>
+            </div>
+            <div class="links">
+              <a href="#">成果レポート</a>
+              <a href="#">GitHub</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <h3>ヘルスケア記録アプリ</h3>
+            <div class="meta">iOS / 2022</div>
+            <ul>
+              <li>日次記録の入力導線を短縮</li>
+              <li>データ同期の安定性を改善</li>
+              <li>アプリ内通知の運用設計を支援</li>
+            </ul>
+            <div class="tags">
+              <span class="tag">Swift</span>
+              <span class="tag">CloudKit</span>
+              <span class="tag">UIKit</span>
+            </div>
+            <div class="links">
+              <a href="#">アプリ紹介</a>
+              <a href="#">ストア</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <h3>イベント運営プラットフォーム</h3>
+            <div class="meta">Web / 2021</div>
+            <ul>
+              <li>チケット管理とチェックインの運用設計</li>
+              <li>管理画面のワークフローを整理</li>
+              <li>CI/CDの導入をサポート</li>
+            </ul>
+            <div class="tags">
+              <span class="tag">Next.js</span>
+              <span class="tag">PostgreSQL</span>
+              <span class="tag">Vercel</span>
+            </div>
+            <div class="links">
+              <a href="#">概要</a>
+              <a href="#">運用ノート</a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <footer>
+        © 2026 Akihito Nakano. All rights reserved.
+      </footer>
+    </div>
+  </body>
+</html>
